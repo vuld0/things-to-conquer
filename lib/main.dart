@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:things_to_conquer/screens/signin.dart';
+import 'package:things_to_conquer/screens/signup.dart';
 import './screens/home.dart';
 
 void main() {
@@ -14,10 +16,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
         SystemUiOverlayStyle(statusBarColor: Colors.black));
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Things to Conquer',
-      home: Home(),
+      home: SignIn(),
     );
   }
 }
