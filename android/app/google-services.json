@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "84522472729",
+    "project_id": "things-to-conquer",
+    "storage_bucket": "things-to-conquer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84522472729:android:fba31537676108a28c6188",
+        "android_client_info": {
+          "package_name": "com.example.things_to_conquer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84522472729-9snn4fgk9f7td9b8kug1rvtg2e0q10r1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.things_to_conquer",
+            "certificate_hash": "fde181b25003895db06632951b61e5f6a1d908cb"
+          }
+        },
+        {
+          "client_id": "84522472729-fq8rnr8tfmoat79olhp3nj5jpp7j2hqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJsVNZAONQ2ctRZoV00bGWkOzNTGiMn3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84522472729-fq8rnr8tfmoat79olhp3nj5jpp7j2hqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
