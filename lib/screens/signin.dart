@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:things_to_conquer/constants/colors.dart';
 import 'package:things_to_conquer/screens/home.dart';
 import 'package:things_to_conquer/screens/reset_password.dart';
 import 'package:things_to_conquer/screens/signup.dart';
@@ -10,19 +9,20 @@ class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _SignInScreenState createState() => _SignInScreenState();
 }
 
 class _SignInScreenState extends State<SignIn> {
-  TextEditingController _passwordTextController = TextEditingController();
-  TextEditingController _emailTextController = TextEditingController();
+  final TextEditingController _passwordTextController = TextEditingController();
+  final TextEditingController _emailTextController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             gradient: LinearGradient(colors: [
               Colors.white70,
               Colors.indigo
@@ -55,8 +55,9 @@ class _SignInScreenState extends State<SignIn> {
                           password: _passwordTextController.text)
                       .then((value) {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Home()));
+                        MaterialPageRoute(builder: (context) => const Home()));
                   }).onError((error, stackTrace) {
+                    // ignore: avoid_print
                     print("Error ${error.toString()}");
                   });
                 }),

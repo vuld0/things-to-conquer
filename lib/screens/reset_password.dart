@@ -6,11 +6,12 @@ class ResetPassword extends StatefulWidget {
   const ResetPassword({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _ResetPasswordState createState() => _ResetPasswordState();
 }
 
 class _ResetPasswordState extends State<ResetPassword> {
-  TextEditingController _emailTextController = TextEditingController();
+  final TextEditingController _emailTextController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,13 +29,12 @@ class _ResetPasswordState extends State<ResetPassword> {
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
               gradient: LinearGradient(colors: [
-            hexStringToColor("CB2B93"),
-            hexStringToColor("9546C4"),
-            hexStringToColor("5E61F4")
+              Colors.white70,
+              Colors.indigo
           ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
           child: SingleChildScrollView(
               child: Padding(
-            padding: EdgeInsets.fromLTRB(20, 120, 20, 0),
+            padding: const EdgeInsets.fromLTRB(20, 120, 20, 0),
             child: Column(
               children: <Widget>[
                 const SizedBox(
