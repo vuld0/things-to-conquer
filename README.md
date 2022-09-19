@@ -17,10 +17,10 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Screenshots
 
-# SignIn
+### SignIn
 [![SignIn.png](https://i.postimg.cc/gJxSqXfg/SignIn.png)](https://postimg.cc/njtGnzVm)
 
-# SignUp
+### SignUp
 [![SignUp.png](https://i.postimg.cc/Y9TXX27M/SignUp.png)](https://postimg.cc/k6FFGmDp)
 
 # Home
