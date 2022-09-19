@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:things_to_conquer/screens/home.dart';
-import 'package:things_to_conquer/screens/reset_password.dart';
 import 'package:things_to_conquer/screens/signup.dart';
 import 'package:things_to_conquer/widgets/reusable_widgets.dart';
 
@@ -24,7 +23,7 @@ class _SignInScreenState extends State<SignIn> {
         height: MediaQuery.of(context).size.height,
         decoration: const BoxDecoration(
             gradient: LinearGradient(colors: [
-              Colors.white70,
+              Colors.indigoAccent,
               Colors.indigo
         ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
         child: SingleChildScrollView(
@@ -37,7 +36,7 @@ class _SignInScreenState extends State<SignIn> {
                 const SizedBox(
                   height: 30,
                 ),
-                reusableTextField("Enter UserName", Icons.person_outline, false,
+                reusableTextField("Enter Email ID", Icons.person_outline, false,
                     _emailTextController),
                 const SizedBox(
                   height: 20,
@@ -47,7 +46,6 @@ class _SignInScreenState extends State<SignIn> {
                 const SizedBox(
                   height: 5,
                 ),
-                forgetPassword(context),
                 firebaseUIButton(context, "Sign In", () {
                   FirebaseAuth.instance
                       .signInWithEmailAndPassword(
@@ -90,20 +88,4 @@ class _SignInScreenState extends State<SignIn> {
     );
   }
 
-  Widget forgetPassword(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: 35,
-      alignment: Alignment.bottomRight,
-      child: TextButton(
-        child: const Text(
-          "Forgot Password?",
-          style: TextStyle(color: Colors.white70),
-          textAlign: TextAlign.right,
-        ),
-        onPressed: () => Navigator.push(context,
-            MaterialPageRoute(builder: (context) => const ResetPassword())),
-      ),
-    );
-  }
 }

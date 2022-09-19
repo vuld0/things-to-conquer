@@ -9,10 +9,10 @@ class SignUp extends StatefulWidget {
 
   @override
   // ignore: library_private_types_in_public_api
-  _SignUpScreenState createState() => _SignUpScreenState();
+  _SignUpState createState() => _SignUpState();
 }
 
-class _SignUpScreenState extends State<SignUp> {
+class _SignUpState extends State<SignUp> {
   final TextEditingController _passwordTextController = TextEditingController();
   final TextEditingController _emailTextController = TextEditingController();
   final TextEditingController _userNameTextController = TextEditingController();
@@ -33,7 +33,7 @@ class _SignUpScreenState extends State<SignUp> {
           height: MediaQuery.of(context).size.height,
           decoration: const BoxDecoration(
               gradient: LinearGradient(colors: [
-           Colors.white70,
+           Colors.indigoAccent,
               Colors.indigo
           ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
           child: SingleChildScrollView(
